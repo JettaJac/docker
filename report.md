@@ -76,8 +76,11 @@ Docker Compose используется для одновременного уп
 ## Chapter II - Решение
 
 `sudo docker rm -f $(docker ps -aq)`
+
 `sudo docker rmi $(docker images -q)`
-`sudo docker run -d --name nas -p 80:80 -p 443:443 76c69feac34e `
+
+`sudo docker run -d --name nas -p 80:80 -p 443:443 76c69feac34e`
+
 ## Part 1. Готовый докер
 
 В качестве конечной цели своей небольшой практики вы сразу выбрали написание докер образа для собственного веб сервера, а потому в начале вам нужно разобраться с уже готовым докер образом для сервера.
@@ -86,7 +89,6 @@ Docker Compose используется для одновременного уп
 **== Задание ==**
 
 1. Взять официальный докер образ с **nginx** и выкачать его при помощи `docker pull nginx`
-`docker pull nginx`
 Предварительно устанавливаем утилу `sudo apt  install docker.io`
 ![](pic/1.png)
 
